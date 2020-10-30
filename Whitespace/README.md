@@ -1,7 +1,9 @@
 ### Códigos:
 
 [LineFeed] ou [LF] ou L - Quebra de linha/Tecla Enter
+
 [SPACE] ou S - Barra de Espaço
+
 [TAB] ou T - Tecla Tab
 
 Os IMP - Instruction Modification Parameter - antecedem as funções.
