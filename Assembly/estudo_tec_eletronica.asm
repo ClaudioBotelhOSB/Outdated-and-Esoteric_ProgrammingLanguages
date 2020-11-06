@@ -1,19 +1,19 @@
 ; ===========================================================
-; Programa   : PICJUMP             | Versão: 01.0 
+; Programa   : PICJUMP             | VersÃ£o: 01.0 
 ; Programador: Claudio Botelho     | Data  : 13/05/2016
 ;************************************************************
 ;
 ;-> Definir processador alvo como sendo o PIC 16F84A
 ;
-;	Pino	Função
-;	RA1	Botão de entrada
-;	RB4	Led de saída
+;	Pino	FunÃ§Ã£o
+;	RA1	BotÃ£o de entrada
+;	RB4	Led de saÃ­da
 ;
 
       LIST	P=16F84A
       #include <P16F84A.inc>
 ;
-;-> Definir os bits da palavra de configuração do PIC 16F84A
+;-> Definir os bits da palavra de configuraÃ§Ã£o do PIC 16F84A
 
       __CONFIG 0x3FF9
 
@@ -36,7 +36,7 @@
 LOOP:
       BTFSC PORTA,1	; Testar bit de entrada
 
-	GOTO LIGA	; Não pulou, estava em '1'=> vai a LIGA
+	GOTO LIGA	; NÃ£o pulou, estava em '1'=> vai a LIGA
 
       BCF PORTB,4 ; Pulou: Desligar bit 4 da porta B
 
@@ -47,4 +47,4 @@ LIGA:
 
 	GOTO LOOP	; Voltar a testar bit de entrada
 
-      END		; Fim das instruções em Assembler
+      END		; Fim das instruÃ§Ãµes em Assembler
